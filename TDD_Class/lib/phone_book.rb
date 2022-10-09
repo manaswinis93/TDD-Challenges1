@@ -6,9 +6,9 @@ class PhoneBook
     text.scan(/[0-9]{11}/).each do |str|
         @numbers << str
     end
-            
+    @numbers.uniq!   
     end
     def list
-        return @numbers.uniq
+        return @numbers
     end
 end

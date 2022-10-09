@@ -14,6 +14,7 @@ class DiaryEntry
     end
   
     def count_words
+      return 0 if @contents.empty?
       return words.length
     end
   
